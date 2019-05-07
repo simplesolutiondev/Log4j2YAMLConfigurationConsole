@@ -1,0 +1,14 @@
+Configuration:
+  status: error
+  name: ConsoleExample
+  packages: "simplesolution.dev"
+  appenders:
+    Console:
+      name: STDOUT
+      PatternLayout:
+        Pattern: "%d - %t - %p - %c - %m%n"
+  Loggers:
+    Root:
+      level: trace
+      AppenderRef:
+        ref: STDOUT
